@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question, idea, or general help
+    url: https://github.com/logiqum/cypherrum-releases/discussions
+    about: Issues are for bugs only. Questions and ideas go to Discussions — search there first.
+  - name: Security disclosure (private)
+    url: https://cypherrum.com/support#security
+    about: Vulnerability reports go to security@cypherrum.com, not public issues.
