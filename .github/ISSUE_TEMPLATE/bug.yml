@@ -1,0 +1,64 @@
+name: Bug report
+description: Report a reproducible bug in cypherrum. For questions or "how do I" — use Discussions instead.
+title: "[Bug] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug report. **Questions and "how do I" go to [Discussions](https://github.com/logiqum/cypherrum-releases/discussions), not here.**
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Find it under Help → About in the app.
+      placeholder: e.g. v0.12.1
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      placeholder: e.g. Windows 11 23H2, macOS 14.4, Ubuntu 24.04
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Numbered list. Be specific.
+      placeholder: |
+        1. Open cypherrum
+        2. Click X
+        3. Observe Y
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs (optional)
+      description: Redact any vault names, paths, or peer identifiers before pasting.
+      render: text
