@@ -34,11 +34,6 @@ The relay only ever sees end-to-end-encrypted payloads — vault contents,
 share envelopes, and inbox messages are all encrypted client-side before
 they leave a device. The relay cannot read them.
 
-**Self-hosting the relay** is supported for users who prefer not to depend
-on Logiqum's instance. Packaging and documentation for self-hosters is on
-the roadmap; contact us via [Discussions](https://github.com/logiqum/cypherrum-releases/discussions)
-if you'd like early access.
-
 ## License
 
 Proprietary. See [cypherrum.com](https://cypherrum.com) for licensing and terms.
